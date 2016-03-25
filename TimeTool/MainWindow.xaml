@@ -5,10 +5,12 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ResizeMode="NoResize"
-         Background="#01FFFFFF"
+        Background="#01FFFFFF"
         AllowsTransparency="True"
+        ShowInTaskbar="False"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseRightButtonUp="Window_MouseRightButtonUp">
+        MouseRightButtonUp="Window_MouseRightButtonUp"
+        Closed="Window_Closed">
     <Grid>
         <TextBlock Name="TimeBlock" Text="00:00:00" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
