@@ -11,6 +11,20 @@
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseRightButtonUp="Window_MouseRightButtonUp"
         Closed="Window_Closed">
+    <Window.Resources>
+        <ContextMenu x:Key="contexMenu">
+            <MenuItem Name="logTime" Header="Log Time" Click="logTime_Click">
+                <MenuItem.Icon>
+                    <Image Source="/TimeTool;component/Images/log.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="exitMenu" Header="Exit" Click="exitMenu_Click">
+                <MenuItem.Icon>
+                    <Image Source="/TimeTool;component/Images/exit.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </ContextMenu>
+    </Window.Resources>
     <Grid>
         <TextBlock Name="TimeBlock" Text="00:00:00" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
